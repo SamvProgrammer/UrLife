@@ -1,0 +1,26 @@
+<ion-view title="Registrarse" id="page12" class=" " >
+    <ion-content padding="true" class="has-header" ng-controller="registrarse2Ctrl">
+        <form id="registrarse2-form14" class="list ">
+            <label class="item item-input " id="registrarse2-input19">
+                <span class="input-label">Peso</span>
+                <input type="text" placeholder="Peso" ng-model="registro2.peso">
+            </label>
+            <label class="item item-input " id="registrarse2-input7">
+                <span class="input-label">Altura</span>
+                <input type="text" placeholder="Altura" ng-model="registro2.altura">
+            </label>
+        </form>
+        <button id="registrarse2-button13" class=" button button-positive  button-block button-outline " ng-click="botonObjetivo()">{{botonObjetivoText}}</button>
+        <form id="registrarse2-form7" class="list " name="formulario">
+            <label class="item item-select " id="registrarse2-select1" name="etiqueta">
+                <span class="input-label" >Padecimientos:
+                </span>
+                <select ng-model="registro2.enfermedadSeleccionada" ng-options="enfermedad.nombre for enfermedad in enfermedades" name="seleccion" >
+                </select>
+            </label>
+        </form>
+        <span class="positive r" >Nombre: <i class="assertive">{{registro2.enfermedadSeleccionada.nombre}}</i> <br>Tipo: <i class="assertive">{{registro2.enfermedadSeleccionada.tipo}}</i></span>
+        <div class="spacer" style="width: 277.333px; height: 141px;"></div>
+        <a ui-sref="monitoreo" id="registrarse2-button16" class=" button button-balanced  button-block " ng-click="registro()">Registrarse</a>
+    </ion-content>
+</ion-view>

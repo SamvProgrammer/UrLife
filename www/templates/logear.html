@@ -1,0 +1,22 @@
+<ion-view title="logear" hide-nav-bar="true" hide-back-button="true" id="page8" style="background-color:#413F88;" class=" ">
+    <ion-content padding="true" style="background: url(img/PFiTMyyQ6aZJU1BC6OUe_gym-wallpaper-1366x768.jpg) no-repeat center;background-size:cover;" class="manual-ios-statusbar-padding">
+        <div ng-controller="logearCtrl">
+		<form id="logear-form2" class="list ">
+            <h1 id="logear-heading3" style="color:#B1A7A7;" class=" ">Iniciar sesión</h1>
+            <div class="spacer" style="width: 283px; height: 275px;"></div>
+            <ion-list id="logear-list4" class=" ">
+                <label class="item item-input " id="logear-input3" name="usuario">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="Usuario" ng-model="nombre">
+                </label>
+                <label class="item item-input " id="logear-input4" name="contra">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="Contraseña" ng-model="contra">
+                </label>
+            </ion-list>
+            <a ng-click="submit()" id="logear-button5" style="border-radius:30px 30px 30px 30px;" class=" button button-assertive  button-block ">Iniciar sesión</a>
+            <a ui-sref="registrarse" id="logear-button6" class=" button button-light  button-block button-clear ">Crear cuenta</a>
+        </form>
+		</div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,43 @@
+<ion-view title="Registrarse" id="page11" class=" " ng-controller="registrarseCtrl">
+    <ion-content padding="true" class="has-header" >
+        <form id="registrarse-form5" class="list ">
+            <ion-list id="registrarse-list11" class="">
+                <label class="item item-input " id="registrarse-input5">
+                    <span class="input-label">Nombre</span>
+                    <input type="text" placeholder="Nombre" ng-model="registro1.nombre">
+                </label>
+                <label class="item item-input " id="registrarse-input6">
+                    <span class="input-label">Apellidos</span>
+                    <input type="text" placeholder="Apellidos" ng-model="registro1.apellidos">
+                </label>
+                <label class="item item-input " id="registrarse-input10">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="Usuario" ng-model="registro1.usuario">
+                </label>
+                <label class="item item-input " id="registrarse-input17">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="Contraseña" ng-model="registro1.contra">
+                </label>
+                <label class="item item-input " id="registrarse-input18">
+                    <span class="input-label">E-mail</span>
+                    <input type="email" placeholder="Correo" ng-model="registro1.correo">
+                </label>
+            </ion-list>
+        </form>
+        <form id="registrarse-form6" class="list ">
+            <div class="item item-body " id="registrarse-list-item-container3">
+                <h2 id="registrarse-heading8" style="color:#000000;font-weight:lighter;" class=" ">Fecha de nacimiento</h2>
+                <form id="registrarse-form11" class="list "> 
+                    <label class="item item-input" >
+                        <span class="input-label  " >Fecha de nacimiento</span>
+                        <input type="date" ng-model="registro1.fechaNacimiento" min="1980-01-01" max="2011-01-01">
+                    </label>
+                    
+                </form>
+            </div>
+            <div class="list card " id="registrarse-card22"></div>
+            <button id="registrarse-button9" class=" button button-positive  button-block button-outline " ng-click="boton()" >{{nombreBotonSexo}}</button>
+        </form>
+        <a ui-sref="registrarse2" id="registrarse-button15" class=" button button-stable  button-block " ng-click="registrarse()">Continuar</a>
+    </ion-content>
+</ion-view>

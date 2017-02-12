@@ -1,0 +1,44 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21" style="background-color:#D2D2E4;">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Panel</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header" ng-controller="principalCtrl">
+            <ion-list id="panel-list5" class=" ">
+                <ion-item class="item-avatar positive  " id="panel-list-item4">
+                    <img src="img/HaTK8jcVTM2neZCTfKwz_person.jpg">
+                    <h2positive>Usuario
+                        <p style="white-space:normal;">{{nombre}}</p>
+                    </h2positive>
+                </ion-item>
+                <ion-item class="item-icon-right dark  " id="panel-list-item1" ui-sref="panel.principal" menu-close="">Rutinas
+                    <i class="icon ion-ios-body"></i>
+                </ion-item>
+                <ion-item class="item-icon-right dark  " id="panel-list-item2" ui-sref="panel.dietas" menu-close="">Dietas
+                    <i class="icon ion-wineglass"></i>
+                </ion-item>
+                <ion-item class="item-icon-right dark  " id="panel-list-item10" ui-sref="panel.lugares" menu-close="">Lugares
+                    <i class="icon ion-map"></i>
+                </ion-item>
+                <ion-item class="item-icon-right dark  " id="panel-list-item3" ui-sref="panel.retos" menu-close="">Retos
+                    <i class="icon ion-ios-pulse"></i>
+                </ion-item>
+                <ion-item class="item-icon-right dark  " id="panel-list-item8" ui-sref="panel.ajustes" menu-close="">Configuracion
+                    <i class="icon ion-settings"></i>
+                </ion-item>
+                <ion-item class="item-icon-right assertive  " id="panel-list-item9" ui-sref="logear" menu-close="">Cerrar sesión
+                    <i class="icon ion-close-circled"></i>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

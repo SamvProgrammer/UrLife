@@ -1,0 +1,28 @@
+<ion-view title="Ubicaciones" hide-nav-bar="false" hide-back-button="true" id="page18" class=" " >
+    <ion-content padding="true" class="has-header" ng-controller="mapaCtrl">
+	
+        <form id="ubicaciones-form8" class="list ">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Buscar lugar">
+            </label>
+        </form>
+        <div class="">
+            <!-- <img src="img/ymXSubAQUyqmXy59x3K1_mapita.PNG" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;"> -->
+			<map on-create="mapCreated(map)"></map>
+        </div>
+        <form id="ubicaciones-form9" class="list ">
+            <ion-toggle toggle-class="toggle-assertive" id="ubicaciones-toggle1" class=" ">Tiendas</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" id="ubicaciones-toggle2" class=" ">Zonas deportivas</ion-toggle>
+            <ion-toggle toggle-class="toggle-balanced" ng-checked="true" id="ubicaciones-toggle3" class=" ">Restaurantes saludables</ion-toggle>
+        </form>
+        <button id="ubicaciones-button31" class=" button button-positive  button-block ">Buscar</button>
+        <h1 id="ubicaciones-heading10" style="color:#5F669C;" class=" ">Información</h1>
+        <ion-list id="ubicaciones-list13" class=" ">
+            <ion-item class="item-icon-left item-icon-right balanced  " id="ubicaciones-list-item18" ui-sref="menus">
+                <i class="icon ion-coffee"></i>Los olivos
+                <i class="icon ion-android-arrow-dropright"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,43 @@
+<ion-view title="Monitoreo" hide-back-button="true" id="page13" class=" ">
+    <ion-content padding="true" class="has-header">
+        <div class="list card " id="monitoreo-card21">
+            <ion-item class="item-avatar positive  " id="monitoreo-list-item28">
+                <img src="img/XvWFiQ2aSz2H5K5dZgXf_person.jpg">
+                <h2positive>Usuario
+                    <p>{{nombre}}</p>
+                </h2positive>
+            </ion-item>
+            <div class=" item item-image">
+                <img src="img/56B7sTRXcJWT7knxeyQC_hot_cyclist-wallpaper-1366x768.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="item item-body " id="monitoreo-list-item-container5">
+                <p id="monitoreo-markdown3" style="margin-top:0px;color:#000000;" class=" ">Monitoreo de tu estado.</p>
+            </div>
+            <ion-item id="monitoreo-list-item11" class="  ">IMC
+                <span class="item-note">{{imc}}</span>
+            </ion-item>
+            <ion-item id="monitoreo-list-item12" class="  ">PADECE
+                <span class="item-note">{{padecimiento}}</span>
+            </ion-item>
+            <ion-item id="monitoreo-list-item13" class="  ">DISCAPACIDAD
+                <span class="item-note">{{alergia.nombre}}</span>
+            </ion-item>
+            <ion-item id="monitoreo-list-item13" class="  ">Tipo
+                <span class="item-note">{{alergia.tipo}}</span>
+            </ion-item>
+            <ion-item class="item-divider " id="monitoreo-list-item-divider2">EJERCICIOS PROPUESTOS</ion-item>
+        </div>
+        <form id="monitoreo-form10" class="list " ng-controller="monitoreoCtrl">
+            <ion-checkbox>CORRER</ion-checkbox>
+            <ion-checkbox>CUERDA</ion-checkbox>
+            <ion-checkbox>JUMPUNG-JACK</ion-checkbox>
+            <ion-checkbox>MONTAIN.-CLIMBERS</ion-checkbox>
+            <ion-checkbox>CARDIOVASCULAR</ion-checkbox>
+            <ion-checkbox ng-repeat="e in ejercicios">{{e.nombre}}</ion-checkbox>
+            <ion-item class="item-divider " id="monitoreo-list-item-divider8">Dietas propuestas</ion-item>
+            <ion-checkbox>Fibra</ion-checkbox>
+            <ion-checkbox>1000 Calorías</ion-checkbox>
+            <a ui-sref="panel.principal" id="monitoreo-button17" style="border-radius:20px 20px 20px 20px;" class=" button button-balanced  button-block ">¡¡LISTO!!</a>
+        </form>
+    </ion-content>
+</ion-view>
